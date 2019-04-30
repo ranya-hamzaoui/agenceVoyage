@@ -1,0 +1,18 @@
+<HTML>
+    <HEAD><TITLE>TEST</TITLE>
+    <SCRIPT LANGUAGE="JavaScript">
+    
+    var fso = new ActiveXObject("Scripting.FileSystemObject"); //on instancie l'objet FSO
+    var fichier = fso.OpenTextFile("f1.txt",1,false);
+    var contenu=fichier.ReadAll();
+     
+    document.write(contenu);
+    fichier.Close();
+    
+    </SCRIPT>
+    </HEAD>
+    <BODY>
+    Lecture du contenu du fichier
+     
+    </BODY>
+    </HTML>
